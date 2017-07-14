@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+		<script>
+$(function(){ 
+var userName="xiaoming"; 
+alert(userName); 
+});
+		</script>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>账户信息</legend>
+	
+				<label>
+					<img src="star.png" />用户名：
+				</label>
+				<input type="text" />
+				<br /><br />
+				<label><img src="star.png" />密&nbsp;&nbsp;码：</label>
+				<input type="text" />
+				<br /><br />
+				
+				<label>性别：</label>
+				<input name="sex" type="radio" />男
+				<input name="sex" type="radio" />女
+				<br />
+			</fieldset>
+			
+			<fieldset>
+				<legend>公司信息</legend>
+	
+				<br />
+				<label>公司名称：</label>
+				<input type="text" />
+				<br /><br />
+				
+				<label>公司所在地：</label>
+				<select name="city" >
+					<option>--请选择--</option>
+					<option>北京</option>
+					<option>河北</option>
+					<option>上海</option>
+					<option>山东</option>
+					<option>河南</option>
+				</select>
+				
+				<select name="area">
+					<option>--请选择--</option>
+					<optgroup label="北京">
+						<option>海定区</option>
+						<option>朝阳区</option>
+						<option>丰台区</option>
+					</optgroup>
+					
+					<optgroup label="河北" disabled="true">
+						<option>石家庄</option>
+						<option>保定</option>
+						<option>邯郸</option>
+					</optgroup>
+				</select>
+				
+				<select name="street">
+					<option>--请选择--</option>
+					<option>四拔子</option>
+					<option>中关村</option>
+					<option>上地</option>
+					<option>软件园</option>
+				</select>
+				<br /><br />
+				
+				<label>购买类型用途：</label>
+				<input name="use" type="checkbox" />IT
+				<input name="use" type="checkbox" />通讯设备
+				<input name="use" type="checkbox" />大家电
+				<input name="use" type="checkbox" />办公耗材
+				<br /><br />
+				
+				<label>公司行业：</label>
+				<select multiple="true" style="overflow: hidden;">
+					<option>IT行业</option>
+					<option>计算机软件</option>
+					<option>市场推广</option>
+					<option>广告</option>
+				</select>
+				<br />
+				
+				<label>公司介绍：</label>
+				<textarea rows="10" cols="50" ></textarea>
+				<br /><br />
+				<label>营业执照上传：</label>
+				<input type="file" title="选取文件" />
+				<br /><br />
+			</fieldset>
+			<input type="image" src="submit.png"/>
+		</form>
+	</body>
+</html>

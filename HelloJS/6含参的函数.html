@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//函数也可以有参数
+			//参数也是不需要写类型的
+			
+			//整形的值，加上一个未定义的变量得到的是一个非数值的NaN
+			function t1(p1,p2){
+				var r = p1 + p2;
+				alert(r);
+			}
+			//t1(4,5,6,7,8);
+			
+			//函数的返回值
+			function t2(p1,p2){
+				return p1*p2;
+			}
+			//alert(t2(4,t2(5,t2(6,t2(7,8)))))；
+			
+			//局部变量
+//			定义在function内部的叫做局部变量
+//			定义在function外部的叫做局部变量
+//			局部变量的作用范围是当前的ttt函数
+//			在ttt函数外面，是无法使用这个变量的
+//			所以也可以说局部变量具有局部作用域
+//			全局变量具有全局作用
+			function ttt(){
+				var 我是一个变量 = "我就是变量的值";
+				alert(我是一个变量);
+			}
+			ttt();
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

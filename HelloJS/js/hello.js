@@ -1,0 +1,1 @@
+window.document.write("i'm the content of outside JS file");

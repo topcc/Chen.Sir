@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//正规写法，指向一个数字
+			var n = 1;
+			//指向一个字符串
+			var n = "一脸懵逼";
+			//赋值了一个boolean类型
+			n = true;
+			var m;
+			//l指向了null 而上面定义的m，并没有指向任何一个内容
+			var l = null;
+			//被用做数字时null表示0
+			//被用做Boolean时null表示false
+			
+			//m是一个未定义变量 200是一个整形变量
+			//得到的result变量是：NaN
+			var result = m - 200;
+			
+			//字符串“300”在于200做减法的时候
+			//js会先将字符串转换为整形的300
+			//在与200做减法
+			var r = "300" - 200;
+			//字符串“sss”，无法转换成一个有效的整形变量
+			//那么和200做减法的操作时，无法得到一个有效的结果，即NaN
+			var r = "sss" - 200;
+			//字符串的拼接
+			var r = "SSS" + 200;
+			window.alert(r);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>演示列表</title>
+	</head>
+	<body>
+		<!--无序列表-->
+		<ul>
+			<li>天道有轮回</li>
+			<li>苍天饶过谁</li>
+			<li>葫芦娃吐火</li>
+			<li></li>
+			<li>毁灭阴影</li>
+			<li>支配死灵</li>
+			<li>魔王降临</li>
+			<li>魂之挽歌</li>
+		</ul>
+		
+		<!--有序列表-->
+		<ol>
+			<!--列表中的元素，也就是item-->
+			<li>春江潮水连海平</li>
+			<li>	海上明月共潮生</li> 
+			<li>滟滟随波千万里</li>
+			<li>何处春江无月明</li>
+		</ol>
+		
+		<a href="hello.html">你好呀</a>
+		
+		<table border="1">
+			<!--tr表示表格中的一行
+				不管是表头中的列名，还是表中的每个单元格的数据
+				都需要在tr标签中
+			-->
+			<tr>
+				<!--table head-->
+				<th>姓名</th>
+				<th>性别</th>
+				<th>年龄</th>
+			</tr>
+			
+			<!--这又是一行-->
+			<tr>
+				<!--table data-->
+				<td>孔刘</td>
+				<td>40</td>
+				<td>男</td>
+			</tr>
+			
+			<!--这又是另一行-->
+			<tr>
+				<!--table data-->
+				<td>杀人回忆</td>
+				<td>20</td>
+				<td>无</td>
+			</tr>
+		</table>
+		
+		<!--form标签：表单标签
+			action属性，表示这个表单要访问哪个资源
+			method属性，表示这次请求属于哪种类型
+		-->
+		<form action="hello.html">
+			<!--input标签的type属性,决定了这个input以何种形式显示到浏览器上-->
+			<input type="text" value="TAT"/>
+			
+			<!--提交按钮-->
+			<input type="submit" value="TAT" />
+			
+			<!--下拉列表-->
+			<select>
+				<!--下拉列表三个选项-->
+				<option>草丛伦</option>
+				<option>菊花信</option>
+				<option>嘉文四世</option>
+			</select>
+			<br />
+			
+			<input name="gender" type="radio" value="Storm Spirit" />风暴之灵
+			<input name="gender" type="radio" value="Ember Spirit"/>灰烬之灵
+			<input name="gender" type="radio" value="Earth Spirit"/>大地之灵
+		</form>
+		
+		<!--div,块状元素，
+			一般用来分模块的
+		-->
+		<div style="color: red;">我是一个div啊咿呀咿呀哟
+			<span>我就是一段普通的文字</span>
+		</div>
+		
+		<div>沉鱼落雁闭月<span style="color: red;">xiu</span>花</div>
+	</body>
+</html>

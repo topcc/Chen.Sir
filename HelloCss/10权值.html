@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--权值，可以帮助我们判断
+			当多个选择器作用在同一个标签时，
+			到底哪个选择器生效
+		-->
+		
+		<!--内嵌样式：1000-->
+		<!--id选择器：100-->
+		<!--类选择器：10-->
+		<!--标签选择器：1-->
+		<style type="text/css">
+			.classdemo{
+				color: red;
+			}
+			
+			#iddemo{
+				color: green;
+			}
+			
+			p{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<!--这个styl就是内联写法
+			
+		-->
+		<p id="iddemo" class="classdemo" style="color: black;">what fucking color am i</p>
+	</body>
+</html>
